@@ -6,7 +6,7 @@ const photos = [
 title:"민들레 홀씨",
 category:"꽃",
 price:500,
-image:"images/flower.jpg"
+image:"1780575171750.jpg"
 },
 
 {

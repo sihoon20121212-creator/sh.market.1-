@@ -9,6 +9,13 @@ price:500,
 image:"images/1780575171750.jpg"
 }
 
+{
+title:"사람마다 다르게 느끼는 돌다리",
+category:"풍경",
+price:600,
+image:"images/1780832329597.jpg"
+}
+
 ];
 
 function setCategory(category){

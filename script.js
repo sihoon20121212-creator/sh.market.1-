@@ -7,20 +7,6 @@ title:"민들레 홀씨",
 category:"꽃",
 price:500,
 image:"images/1780575171750.jpg"
-},
-
-{
-title:"노을진 바다",
-category:"풍경",
-price:1000,
-image:"images/sunset.jpg"
-},
-
-{
-title:"숲속 사슴",
-category:"동물",
-price:1000,
-image:"images/deer.jpg"
 }
 
 ];
@@ -31,12 +17,10 @@ render();
 }
 
 function purchase(title){
-
 window.open(
 "https://instagram.com/sh.market.1",
 "_blank"
 );
-
 }
 
 function render(){

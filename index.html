@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SH.MARKET.1</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>📸 SH.MARKET.1</h1>
+<p>나만의 사진을 판매하는 갤러리</p>
+</header>
+
+<div class="container">
+
+<input
+id="search"
+class="search"
+placeholder="사진 검색..."
+onkeyup="render()"
+>
+
+<div class="tabs">
+<button onclick="setCategory('전체')">전체</button>
+<button onclick="setCategory('풍경')">풍경</button>
+<button onclick="setCategory('동물')">동물</button>
+<button onclick="setCategory('도시')">도시</button>
+<button onclick="setCategory('야경')">야경</button>
+</div>
+
+<div id="gallery" class="gallery"></div>
+
+</div>
+
+<footer>
+© 2026 SH.MARKET.1
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

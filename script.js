@@ -3,7 +3,7 @@ let currentCategory = "전체";
 const photos = [
 
 {
-title:"테스트",
+title:"민들레 홀씨",
 category:"꽃",
 price:500,
 image:"images/1780575171750.jpg"
@@ -50,7 +50,7 @@ filtered.map(photo => `
 
 <img
 src="${photo.image}"
-onerror="this.src='https://via.placeholder.com/600x400?text=Photo'"
+onerror="this.src='1780575171750.jpg'"
 >
 
 <div class="content">

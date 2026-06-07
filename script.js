@@ -7,7 +7,7 @@ title:"민들레 홀씨",
 category:"꽃",
 price:500,
 image:"images/1780575171750.jpg"
-}
+},
 
 {
 title:"사람마다 다르게 느끼는 돌다리",

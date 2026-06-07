@@ -6,7 +6,7 @@ const photos = [
 title:"테스트",
 category:"꽃",
 price:500,
-image:"https://picsum.photos/600/400"
+image:"images/1780575171750.jpg"
 }
 
 ];

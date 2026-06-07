@@ -3,6 +3,13 @@ let currentCategory = "전체";
 const photos = [
 
 {
+title:"민들레 홀씨",
+category:"꽃",
+price:500,
+image:"images/flower.jpg"
+},
+
+{
 title:"노을진 바다",
 category:"풍경",
 price:5000,
@@ -14,13 +21,6 @@ title:"숲속 사슴",
 category:"동물",
 price:7000,
 image:"images/deer.jpg"
-},
-
-{
-title:"서울 야경",
-category:"야경",
-price:10000,
-image:"images/night.jpg"
 }
 
 ];

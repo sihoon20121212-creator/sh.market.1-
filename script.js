@@ -24,10 +24,28 @@ render();
 }
 
 function purchase(title){
+
 window.open(
 "https://instagram.com/sh.market.1",
 "_blank"
 );
+
+}
+
+function openModal(image){
+
+document.getElementById("modalImg").src = image;
+
+document.getElementById("modal")
+.classList.add("active");
+
+}
+
+function closeModal(){
+
+document.getElementById("modal")
+.classList.remove("active");
+
 }
 
 function render(){
@@ -58,12 +76,8 @@ filtered.map(photo => `
 <img
 src="${photo.image}"
 onclick="openModal('${photo.image}')"
-onerror="this.src='images/1780575171750.jpg'"
+draggable="false"
 >
-
-<div class="watermark">
-SH.MARKET.1
-</div>
 
 <div class="content">
 
@@ -89,24 +103,8 @@ onclick="purchase('${photo.title}')">
 
 }
 
+document.addEventListener("contextmenu", e =>
+e.preventDefault()
+);
+
 render();
-function openModal(src){
-document.getElementById("modal").style.display="flex";
-document.getElementById("modalImg").src=src;
-}
-
-function closeModal(){
-document.getElementById("modal").style.display="none";
-}
-
-document.addEventListener("contextmenu", e=>{
-e.preventDefault();
-});
-
-document.addEventListener("dragstart", e=>{
-e.preventDefault();
-});
-
-document.addEventListener("selectstart", e=>{
-e.preventDefault();
-});

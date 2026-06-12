@@ -37,7 +37,43 @@ onkeyup="render()"
 <footer>
 © 2026 SH.MARKET.1
 </footer>
+<div id="modal" class="modal">
 
+    <div class="modal-box">
+
+        <span class="close-btn" onclick="closeModal()">✕</span>
+
+        <div class="modal-image-wrap">
+
+            <img id="modalImg">
+
+            <div class="watermark-grid">
+                SH.MARKET.1<br>
+                SH.MARKET.1<br>
+                SH.MARKET.1
+            </div>
+
+        </div>
+
+        <div class="modal-info">
+
+            <h2 id="modalTitle"></h2>
+
+            <p id="modalCategory"></p>
+
+            <p id="modalPrice" class="modal-price"></p>
+
+            <button
+                class="buy-btn"
+                onclick="purchase()">
+                인스타 문의
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
 <div id="modal" class="modal" onclick="closeModal()">
 
 <div class="watermark-grid">

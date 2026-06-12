@@ -114,3 +114,36 @@ e.preventDefault()
 );
 
 render();
+function openModal(photo){
+
+document
+.getElementById("modal")
+.classList.add("active");
+
+document
+.getElementById("modalImg")
+.src = photo.image;
+
+document
+.getElementById("modalTitle")
+.innerText = photo.title;
+
+document
+.getElementById("modalCategory")
+.innerText =
+"카테고리 : " + photo.category;
+
+document
+.getElementById("modalPrice")
+.innerText =
+"₩ " + photo.price.toLocaleString();
+
+}
+
+function closeModal(){
+
+document
+.getElementById("modal")
+.classList.remove("active");
+
+}

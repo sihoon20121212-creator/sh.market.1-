@@ -14,8 +14,14 @@ title:"숲 사이로",
 category:"풍경",
 price:600,
 image:"images/1780832329597.jpg"
-}
+},
 
+{
+title:"고요가 머무는 곳",
+category:"풍경",
+price:600,
+image:"images/1781255699856.jpg"
+}
 ];
 
 function setCategory(category){

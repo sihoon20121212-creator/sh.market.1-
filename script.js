@@ -22,6 +22,7 @@ category:"풍경",
 price:600,
 image:"images/1781255699856.jpg"
 }
+
 ];
 
 function setCategory(category){
@@ -29,29 +30,34 @@ currentCategory = category;
 render();
 }
 
-function purchase(title){
-
+function purchase(){
 window.open(
 "https://instagram.com/sh.market.1",
 "_blank"
 );
-
 }
 
-function openModal(image){
+function openModal(photo){
 
-document.getElementById("modalImg").src = image;
+document.getElementById("modal").classList.add("active");
 
-document.getElementById("modal")
-.classList.add("active");
+document.getElementById("modalImg").src =
+photo.image;
+
+document.getElementById("modalTitle").innerText =
+photo.title;
+
+document.getElementById("modalCategory").innerText =
+"카테고리 : " + photo.category;
+
+document.getElementById("modalPrice").innerText =
+"₩ " + photo.price.toLocaleString();
 
 }
 
 function closeModal(){
-
 document.getElementById("modal")
 .classList.remove("active");
-
 }
 
 function render(){
@@ -69,7 +75,9 @@ photo.category === currentCategory)
 
 &&
 
-photo.title.toLowerCase().includes(keyword)
+photo.title
+.toLowerCase()
+.includes(keyword)
 
 );
 
@@ -77,73 +85,28 @@ document.getElementById("gallery").innerHTML =
 
 filtered.map(photo => `
 
-<div class="card">
-
-<img
+<div class="card"><img
 src="${photo.image}"
-onclick="openModal('${photo.image}')"
+onclick='openModal(${JSON.stringify(photo)})'
 draggable="false"
->
 
-<div class="content">
+«»
 
-<h3>${photo.title}</h3>
-
-<p>${photo.category}</p>
-
-<p class="price">
+<div class="content"><h3>${photo.title}</h3><p>${photo.category}</p><p class="price">
 ₩ ${photo.price.toLocaleString()}
-</p>
-
-<button
+</p><button
 class="buy-btn"
-onclick="purchase('${photo.title}')">
+onclick="purchase()">
 인스타 문의
 </button>
 
-</div>
-
-</div>
-
-`).join("");
+</div></div>`).join("");
 
 }
 
-document.addEventListener("contextmenu", e =>
-e.preventDefault()
+document.addEventListener(
+"contextmenu",
+e => e.preventDefault()
 );
 
 render();
-function openModal(photo){
-
-document
-.getElementById("modal")
-.classList.add("active");
-
-document
-.getElementById("modalImg")
-.src = photo.image;
-
-document
-.getElementById("modalTitle")
-.innerText = photo.title;
-
-document
-.getElementById("modalCategory")
-.innerText =
-"카테고리 : " + photo.category;
-
-document
-.getElementById("modalPrice")
-.innerText =
-"₩ " + photo.price.toLocaleString();
-
-}
-
-function closeModal(){
-
-document
-.getElementById("modal")
-.classList.remove("active");
-
-}

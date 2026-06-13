@@ -12,17 +12,31 @@ image:"images/1780575171750.jpg"
 {
 title:"숲 사이로",
 category:"풍경",
-price:600,
+price:500,
 image:"images/1780832329597.jpg"
 },
 
 {
 title:"고요가 머무는 곳",
 category:"풍경",
-price:600,
+price:500,
 image:"images/1781255699856.jpg"
-}
+},
 
+
+{
+title:"햇살이 앉은 곳",
+category:"풍경",
+price:500,
+image:"images/1781341720258.jpg"
+},
+
+{
+title:"초여름",
+category:"풍경",
+price:500,
+image:"images/1781341720187.jpg"
+}
 ];
 
 function setCategory(category){

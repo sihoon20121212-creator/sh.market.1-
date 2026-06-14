@@ -36,6 +36,13 @@ title:"초여름",
 category:"풍경",
 price:500,
 image:"images/1781341720187.jpg"
+},
+
+{
+title:"천천히 자라는 마음",
+category:"꽃",
+price:500,
+image:"images/1781435551175.jpg"
 }
 ];
 
